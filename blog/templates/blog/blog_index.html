@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index du blog</title>
+</head>
+<body>
+    <h1>Index du blog</h1>
+    <br>
+    <h4></h4>Liste des articles :</h4>
+    <br>
+    {% for article in articles %}
+        <h2><a href="article/{{ article.title }}">{{ article.title }}</a></h2>
+        <p>{{ article.author }}</p>
+        <br>
+    {% empty %}
+        <p>Aucun article disponible.</p>
+    {% endfor %}
+</body>
+</html>
