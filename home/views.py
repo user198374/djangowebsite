@@ -5,3 +5,9 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, 'home/index.html')
+
+def auth_app(request):
+    return render(request, 'auth_app/inscription.html')
+
+def connexion(request):
+    return render(request, 'auth_app/connexion.html')

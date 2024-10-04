@@ -22,10 +22,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
     path('blog/', include('blog.urls')),
-    path('inscription/', views.inscription, name='inscription')
+    path('inscription/', views.inscription, name='inscription'),
+    path('connexion/', views.connexion, name='connexion'),
+
 
 ]
 # login/urls.py (ou le fichier principal des URLs du projet)
-from django.contrib import admin
-from django.urls import path, include
+
 
